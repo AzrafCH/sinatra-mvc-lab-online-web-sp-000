@@ -10,7 +10,7 @@ class PigLatinizer
       translation = ''
       qu = false
       if vowels.include? word[0]
-          translation = word.upcase + 'way'
+          translation = word.first.upcase + 'way'
           result.push(translation)
       else
           word = word.split('')
